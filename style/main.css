@@ -1,0 +1,183 @@
+:root {
+    --main-clr: #0a0a0a;
+}
+@font-face {
+    font-family: "Krona One"; 
+    src: url("../assets/fonts/KronaOne-Regular.ttf"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+@font-face {
+    font-family: "Raidplan"; 
+    src: url("../assets/fonts/Raidplan.otf");
+    font-style: normal; 
+    font-weight: normal; 
+}
+* {
+    font-family: 'Raidplan';
+    
+}
+body {
+    height: 100%; 
+    background: var(--main-clr);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Content {
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 1vh;
+    font-size: 24px;
+    color: #f8f7ed;
+    /* filter: drop-shadow(0px 5px 12px #f8f7ed);
+    animation: shadow 5s infinite ease-in-out; */
+}
+.Content__Nickname {
+    font-size: 36px;
+    filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.5));
+}
+.Content__Steam-a {
+    overflow: hidden;
+    text-decoration: none;
+    color: #f8f7ed;
+    opacity: .3;
+    transition: .3s;
+}
+.Content__Steam {
+    border: 3px solid rgba(248, 247, 237, 0.25);
+    border-radius: 16px;
+    padding: 16px;
+    transition: 2s;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 8px rgba(248, 247, 237, 0.25);
+}
+.Steam__hr {
+    border: 1px solid rgba(248, 247, 237, 0.25);
+    filter: blur(0px);
+    transition: 2s;
+}
+.Steam__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10vw;
+}
+.Steam__lvl {
+    padding: 5px;
+    border: 2px solid #7652c9;
+    border-radius: 14px;
+}
+.Steam__Details {
+    height: 0px;
+    text-align: start;
+    transition: .3s;
+    overflow: hidden;
+    filter: blur(4px);
+}
+.Steam__TradeBan::after {
+    content: 'none';
+    color: #D2E459;
+}
+.Steam__VACBan::after {
+    content: 'none';
+    color: #D2E459;
+    
+}
+.Steam__ComBan::after {
+    content: 'none';
+    color: #D2E459;
+    
+}
+.Content__Steam-a:hover {
+    opacity: 1;
+}
+.Content__Steam-a:hover .Steam__Details  {
+    opacity: 1;
+    transition: .3s;
+    font-size: 24px;
+    letter-spacing: 0px;
+    height: 100px;
+    filter: blur(0px);
+}
+.Content__Steam-a:hover .Steam__hr {
+    border: 1px solid #4d6c8b;
+    box-shadow: 0px 0px 12px #4d6c8b;
+    transition: .8s;
+}
+.Content__Steam-a:hover .Content__Steam {
+    border: 3px solid #4d6c8b;
+    transition: .8s;
+    box-shadow: 0px 0px 12px #4d6c8b;
+}
+.Steam__Steam {
+    transition: 2s;
+}
+.Content__Steam-a:hover .Steam__Steam {
+    color: #4d6c8b;
+    filter: drop-shadow(0px 0px 16px);
+    transition: .8s;
+}
+.Content__Faceit-a {
+    overflow: hidden;
+    text-decoration: none;
+    color: #f8f7ed;
+    opacity: .3;
+    transition: .3s;
+}
+.Content__Faceit {
+    border: 3px solid rgba(248, 247, 237, 0.25);
+    border-radius: 16px;
+    padding: 16px;
+    transition: 2s;
+    box-shadow: 0px 0px 8px rgba(248, 247, 237, 0.25);
+}
+.Faceit__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10vw;
+}
+.Faceit__lvl {
+    color: #5dbb29;
+}
+.Faceit__hr {
+    border: 1px solid rgba(248, 247, 237, 0.25);
+    filter: blur(0px);
+    transition: 2s;
+}
+.Faceit__Details {
+    height: 0px;
+    text-align: start;
+    transition: .3s;
+    overflow: hidden;
+    filter: blur(4px);
+}
+.Content__Faceit-a:hover {
+    opacity: 1;
+}
+.Faceit__Faceit {
+    transition: 2s;
+}
+.Content__Faceit-a:hover .Content__Faceit {
+    border: 3px solid #ff5500;
+    box-shadow: 0px 0px 12px #ff5500;
+    transition: .8s;
+}
+.Content__Faceit-a:hover .Faceit__hr {
+    transition: 1s;
+    border: 1px solid #ff5500;
+    box-shadow: 0px 0px 12px #ff5500;
+}
+.Content__Faceit-a:hover .Faceit__Details {
+    height: 90px;
+    filter: blur(0px);
+}
+.Content__Faceit-a:hover .Faceit__Faceit {
+    color: #ff5500;
+    transition: .8s;
+    filter: drop-shadow(0px 0px 16px);
+}
+
+
